@@ -1,0 +1,7 @@
+<%= render 'book' ,book:@book %>
+
+<div>
+  <%= link_to "Edit this books", edit_book_path(@book) %> |
+  <%= link_to "Back to Book", books_path %>
+  <%= button_to "Destroy this books", @book, method: :delete, class: "btn btn-danger ml-3"%>
+</div>
